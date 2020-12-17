@@ -1,0 +1,21 @@
+Projeto Call of Duty 3 - Unity
+
+Objetivo: Aprender mais da ferramenta e criar portifólio
+
+O projeto deverá conter:
+-Menu
+-Início da gameplay (até os 12 minutos do vídeo no máximo)
+--Fase de Tutorial
+--Início da primeira fase
+
+Referência 
+https://www.youtube.com/watch?v=wZggxewd5b4&t=56s&ab_channel=ToughGamingGuy
+
+Modelos 3D:
+Willys Jeep - Sketchfab, Aligned Games
+M1 garand - Sketchfab, Raymond
+American m1 helmet - Sketchfab, Efarys
+
+Particles Effects 
+Unity asset store, Unity standarts effecs 
+

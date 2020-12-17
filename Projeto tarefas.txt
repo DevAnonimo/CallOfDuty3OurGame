@@ -1,0 +1,11 @@
+Gameplay
+-Recarregar (incluir animação) - OK!
+-Mirar
+-Pegar arma
+
+
+Mapa
+-Melhorar textura do terreno
+-Melhorar conceito do cenário
+--Stand de tiro
+-Colocar grama
