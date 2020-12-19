@@ -1,7 +1,6 @@
 Gameplay
--Recarregar (incluir animação) - OK!
--Mirar
--Pegar arma
+-Mirar -- OK!
+-Pegar arma - Sendo trabalhado
 
 
 Mapa
