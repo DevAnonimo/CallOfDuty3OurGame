@@ -1,10 +1,12 @@
 Gameplay
 -Mirar -- OK!
--Pegar arma - Sendo trabalhado
+-Pegar arma (script) foi polido para o projeto - OK!
 
 
 Mapa
--Melhorar textura do terreno
+-Melhorar textura do terreno - Aprendido! 
+--Só pintar uma leyem em cima da outra com opacidade reduzida
+-Organizar hierarquia - OK!
 -Melhorar conceito do cenário
 --Stand de tiro
 -Colocar grama

@@ -4,14 +4,18 @@ using UnityEngine;
 
 public class WeaponPick : MonoBehaviour
 {
-    public Transform equipPosition;
+    //Distancia para detectar a arma
     public float distance = 10f;
-    GameObject currentWeapon;
-    GameObject wp;
+
+    //Destruir o objeto no chão depois de pego
+    GameObject droppedWeapon;
 
     bool canGrab;
+    string arma = "";
 
+    //Armas para serem ativadas ou desativadas
     public GameObject m1Garant;
+    public GameObject Thompson;
 
     private void Update()
     {
@@ -21,19 +25,10 @@ public class WeaponPick : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
-                if (currentWeapon != null)
-                    Drop();
 
-                Desactivate();
+                ActivateGun();
 
-                m1Garant.SetActive(true);
             }
-        }
-
-        if (currentWeapon != null)
-        {
-            if (Input.GetKeyDown(KeyCode.Q))
-                Drop();
         }
     }
 
@@ -45,9 +40,12 @@ public class WeaponPick : MonoBehaviour
         {
             if (hit.transform.tag == "CanGrab")
             {
-                Debug.Log("I can grab it!");
                 canGrab = true;
-                wp = hit.transform.gameObject;
+
+                droppedWeapon = hit.transform.gameObject;
+
+                arma = hit.transform.name;
+                Debug.Log("Arma: " + arma);
 
             }
         }
@@ -55,13 +53,21 @@ public class WeaponPick : MonoBehaviour
             canGrab = false;
     }
 
-    private void Desactivate()
+    private void ActivateGun()
     {
-        currentWeapon = wp;
-        currentWeapon.SetActive(false);
-    }
 
-    private void Drop()
-    {
+        if(arma == "M1Garand")
+        {
+            m1Garant.SetActive(true);
+            Thompson.SetActive(false);
+        }
+        else if(arma == "Thompson")
+        {
+            m1Garant.SetActive(false);
+            Thompson.SetActive(true);
+        }
+
+        if(droppedWeapon != null)
+        Destroy(droppedWeapon);
     }
 }

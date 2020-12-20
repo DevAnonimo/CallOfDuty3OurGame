@@ -15,6 +15,11 @@ Modelos 3D:
 Willys Jeep - Sketchfab, Aligned Games
 M1 garand - Sketchfab, Raymond
 American m1 helmet - Sketchfab, Efarys
+Cercas
+-Free3d.com, davibr50012
+-Free3d.com, mapelisin111
+-Turbosquid, RFJ (madeira)
+
 
 Particles Effects 
 Unity asset store, Unity standarts effecs 
